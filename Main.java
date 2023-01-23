@@ -1,3 +1,7 @@
+import Classes.Sedan;
+import Classes.Truck;
+import Classes.UtilityVehicle;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -9,6 +13,9 @@ public class Main {
         System.out.println(roundedTwo(numberRandom));
         System.out.println(reverseSign(num));
 
+        Sedan focus= new Sedan("vinda54s","ford","Focus", 120000);
+        Truck fordCargo2500=new Truck("vinsga2500","ford","cargo2500", 300000,5);
+        UtilityVehicle ranger=new UtilityVehicle("vindhads500","ford","ranger",10000,true);
     }
 
     public static BigDecimal roundedTwo(double number){
@@ -22,7 +29,5 @@ public class Main {
  return number.setScale(2, RoundingMode.FLOOR);
 
     }
-
-
-
+    
 }

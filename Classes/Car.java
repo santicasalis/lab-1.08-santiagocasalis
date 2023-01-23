@@ -1,12 +1,18 @@
 package Classes;
 
 
-abstract class Car {
+public abstract class Car {
     protected String vinNumber;
     protected String make;
     protected String model;
     protected int mileage;
 
+    public Car(String vinNumber, String make, String model, int mileage) {
+        this.vinNumber = vinNumber;
+        this.make = make;
+        this.model = model;
+        this.mileage = mileage;
+    }
     public String getVinNumber() {
         return vinNumber;
     }
@@ -38,18 +44,4 @@ abstract class Car {
     public void setMileage(int mileage) {
         this.mileage = mileage;
     }
-}
-
-class Sedan extends Car {
-
-}
-
-class UtilityVehicle extends Car {
-    protected boolean fourWheelDrive;
-
-}
-
-class Truck extends Car {
-    protected int towingCapacity;
-
 }
