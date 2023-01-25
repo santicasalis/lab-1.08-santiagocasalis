@@ -1,6 +1,4 @@
-import Classes.Sedan;
-import Classes.Truck;
-import Classes.UtilityVehicle;
+import Classes.*;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -16,6 +14,12 @@ public class Main {
         Sedan focus= new Sedan("vinda54s","ford","Focus", 120000);
         Truck fordCargo2500=new Truck("vinsga2500","ford","cargo2500", 300000,5);
         UtilityVehicle ranger=new UtilityVehicle("vindhads500","ford","ranger",10000,true);
+
+        Movie movie = new Movie(1,"Harry potter",2010,"USA", "J.K. Rowling", 125);
+        Tvseries serie = new Tvseries(2,"Games of Thrones",2012,"England",8,80);
+
+        System.out.println(movie.isWatched());
+
     }
 
     public static BigDecimal roundedTwo(double number){
@@ -29,5 +33,5 @@ public class Main {
  return number.setScale(2, RoundingMode.FLOOR);
 
     }
-    
+
 }
